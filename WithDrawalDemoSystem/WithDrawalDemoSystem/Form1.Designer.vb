@@ -28,7 +28,7 @@ Partial Class Form1
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TextBalance = New System.Windows.Forms.TextBox()
         Me.TextWithdraw = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.LabelResult = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Button1
@@ -81,21 +81,20 @@ Partial Class Form1
         Me.TextWithdraw.Size = New System.Drawing.Size(133, 20)
         Me.TextWithdraw.TabIndex = 5
         '
-        'Label4
+        'LabelResult
         '
-        Me.Label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label4.Location = New System.Drawing.Point(125, 124)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(136, 151)
-        Me.Label4.TabIndex = 6
-        Me.Label4.Text = "Label4"
+        Me.LabelResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.LabelResult.Location = New System.Drawing.Point(125, 124)
+        Me.LabelResult.Name = "LabelResult"
+        Me.LabelResult.Size = New System.Drawing.Size(136, 151)
+        Me.LabelResult.TabIndex = 6
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(277, 295)
-        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.LabelResult)
         Me.Controls.Add(Me.TextWithdraw)
         Me.Controls.Add(Me.TextBalance)
         Me.Controls.Add(Me.Label3)
@@ -115,5 +114,5 @@ Partial Class Form1
     Friend WithEvents Label3 As Label
     Friend WithEvents TextBalance As TextBox
     Friend WithEvents TextWithdraw As TextBox
-    Friend WithEvents Label4 As Label
+    Friend WithEvents LabelResult As Label
 End Class
