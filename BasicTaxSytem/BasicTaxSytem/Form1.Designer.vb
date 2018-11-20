@@ -24,9 +24,9 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextSalary = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.LabelText = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -34,50 +34,51 @@ Partial Class Form1
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(24, 26)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 13)
+        Me.Label1.Size = New System.Drawing.Size(93, 13)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Label1"
+        Me.Label1.Text = "เงินเดือน ต่อเดือน"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(24, 71)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(39, 13)
+        Me.Label2.Size = New System.Drawing.Size(63, 13)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Label2"
+        Me.Label2.Text = "ต้องเสียภาษี"
         '
-        'TextBox1
+        'TextSalary
         '
-        Me.TextBox1.Location = New System.Drawing.Point(69, 23)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 2
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(69, 68)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 3
+        Me.TextSalary.Location = New System.Drawing.Point(123, 23)
+        Me.TextSalary.Name = "TextSalary"
+        Me.TextSalary.Size = New System.Drawing.Size(145, 20)
+        Me.TextSalary.TabIndex = 2
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(69, 107)
+        Me.Button1.Location = New System.Drawing.Point(123, 118)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(100, 23)
+        Me.Button1.Size = New System.Drawing.Size(145, 23)
         Me.Button1.TabIndex = 4
-        Me.Button1.Text = "Button1"
+        Me.Button1.Text = "คำนวน"
         Me.Button1.UseVisualStyleBackColor = True
+        '
+        'LabelText
+        '
+        Me.LabelText.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.LabelText.Location = New System.Drawing.Point(123, 70)
+        Me.LabelText.Name = "LabelText"
+        Me.LabelText.Size = New System.Drawing.Size(145, 22)
+        Me.LabelText.TabIndex = 5
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(178, 153)
+        Me.ClientSize = New System.Drawing.Size(280, 153)
+        Me.Controls.Add(Me.LabelText)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.TextSalary)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Form1"
@@ -89,7 +90,7 @@ Partial Class Form1
 
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents TextSalary As TextBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents LabelText As Label
 End Class
