@@ -113,7 +113,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(284, 291)
         Me.Controls.Add(Me.LabelINPUT)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.LabelAVG)
@@ -124,7 +124,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Sum and avg"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
