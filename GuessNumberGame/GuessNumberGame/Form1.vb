@@ -3,7 +3,7 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Button1.Enabled = False
         Dim RNG As Random = New Random
-        Dim GenNum As Integer = RNG.Next(1, 9)
+        Dim GenNum As Integer = RNG.Next(0, 99)
         Dim Tried As Integer = 7
 
         For x = Tried - 1 To -1 Step -1
